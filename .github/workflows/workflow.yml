@@ -5,6 +5,9 @@ on:
     branches:
     - master
 
+env:
+  GCS_BUCKET: ${{ secrets.GCS_BUCKET }}
+
 jobs:
   setup-build-deploy:
     name: Setup, Build, and Deploy
@@ -23,4 +26,4 @@ jobs:
 
     - name: Deploy
       run: |-
-        gsutil -m rsync -R output gs://bareksa-technical-test
+        gsutil -m rsync -R output gs://$GCS_BUCKET
