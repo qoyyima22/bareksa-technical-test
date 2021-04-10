@@ -23,4 +23,4 @@ jobs:
 
     - name: Deploy
       run: |-
-        gsutil -m rsync -R output gs://${{ secrets.GCS_BUCKET }}
+        gsutil -m rsync -R output gs://bareksa-technical-test
