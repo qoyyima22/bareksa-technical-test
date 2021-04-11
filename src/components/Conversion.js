@@ -53,6 +53,9 @@ const Conversion = ({data}) => {
              showInLegend: true
             },
         },
+        credits: {
+            enabled: false
+        }
     }} />
 
     return (

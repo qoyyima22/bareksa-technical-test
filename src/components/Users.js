@@ -48,6 +48,9 @@ const Users = ({data}) => {
              showInLegend: true
             },
         },
+        credits: {
+            enabled: false
+        }
     }} />
 
     return (
