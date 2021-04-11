@@ -1,7 +1,7 @@
 import HighchartsReact from 'highcharts-react-official'
 import HighCharts from "highcharts"
 import React, {useEffect, useState} from 'react'
-import styles from "./Users.css"
+import styles from "./PieChart.css"
 import variablePie from 'highcharts/modules/variable-pie'
 
 variablePie(HighCharts)
@@ -31,7 +31,8 @@ const Users = ({data}) => {
         title: "Tes",
         tooltip: {
             headerFormat: "",
-            pointFormat: '{point.y}'
+            pointFormat: '{point.y}',
+            followPointer: false
         },
         series: [{data: pieData}],
         plotOptions: {
@@ -54,7 +55,7 @@ const Users = ({data}) => {
     }} />
 
     return (
-        <div className={styles.container}>
+        <div className={styles.container} style={{flex: 336}}>
             <div className={styles.titleContainer}>
                 <div className={styles.titleText}>Users</div>
                 <button className={styles.titleButton}>&#8230;</button>

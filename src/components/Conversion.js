@@ -1,7 +1,7 @@
 import HighchartsReact from 'highcharts-react-official'
 import HighCharts from "highcharts"
 import React, {useEffect, useState} from 'react'
-import styles from "./Conversion.css"
+import styles from "./PieChart.css"
 
 const Conversion = ({data}) => {
     const [pieData, setPieData] = useState([])
@@ -36,7 +36,8 @@ const Conversion = ({data}) => {
         title: "Tes",
         tooltip: {
             headerFormat:"",
-            pointFormat: '$ {point.y}'
+            pointFormat: '$ {point.y}',
+            followPointer: false
         },
         series: [{data: pieData}],
         plotOptions: {
@@ -59,7 +60,7 @@ const Conversion = ({data}) => {
     }} />
 
     return (
-        <div className={styles.container}>
+        <div className={styles.container} style={{flex: 328}}>
             <div className={styles.titleContainer}>
                 <div className={styles.titleText}>Conversion</div>
                 <button className={styles.titleButton}>&#8230;</button>

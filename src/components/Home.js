@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Layout from './Layout';
 import Conversion from "./Conversion.js"
 import Users from "./Users.js"
+import Revenue from "./Revenue.js"
 import styles from "./Home.css"
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
         <div className={styles.chartSection}>
           <Conversion data={data?.orders} />
           <Users data={data?.user_category} />
+          <Revenue data={data?.orders} />
         </div>
       </div>
     </Layout>
