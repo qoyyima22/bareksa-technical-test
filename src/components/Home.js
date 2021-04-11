@@ -19,7 +19,7 @@ const Home = () => {
       <div className={styles.container}>
         <div className={styles.chartSection}>
           <Conversion data={data?.orders} />
-          {/* <Users data={data?.user_category} /> */}
+          <Users data={data?.user_category} />
         </div>
       </div>
     </Layout>

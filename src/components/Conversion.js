@@ -35,6 +35,7 @@ const Conversion = ({data}) => {
         },
         title: "Tes",
         tooltip: {
+            headerFormat:"",
             pointFormat: '$ {point.y}'
         },
         series: [{data: pieData}],
