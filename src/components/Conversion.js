@@ -56,6 +56,14 @@ const Conversion = ({data}) => {
         },
         credits: {
             enabled: false
+        },
+        legend: {
+            itemStyle: {
+                color: "#9c9c9c",
+                fontSize: "12px",
+                fontFamily: "Montserrat, sans-serif",
+                fontWeight: "400"
+            }
         }
     }} />
 

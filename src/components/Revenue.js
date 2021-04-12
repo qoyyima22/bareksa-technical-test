@@ -7,6 +7,10 @@ import stylesRev from "./Revenue.css"
 
 const Revenue = ({data}) => {
     const [areaData, setAreaData] = useState([])
+    const [rev, setRev] = useState({
+        total: 0,
+        changes: 100
+    })
     useEffect(() => {
         const days = ['Mon', "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
         let temp = {}
@@ -27,15 +31,21 @@ const Revenue = ({data}) => {
             }
         }
         let res = []
+        let total = 0
         Object.keys(temp).forEach((el) => {
+            total+=temp[el].value
             res.push([
                 temp[el].date.getTime(),
                 temp[el].value,
                 // x: temp[el].day,
             ])
         })
-        console.log(res, "ini res")
+        console.log({res,total}, "ini res")
         setAreaData(res)
+        setRev({
+            ...rev,
+            total,
+        })
     },[data])
 
     const axisStyle = {
@@ -47,11 +57,12 @@ const Revenue = ({data}) => {
 
     const options = {
         chart: {
-            events: {
-                redraw: function(e) {
-                    console.log({e,this: this.x}, "HUUHUAHUFHUQHUHFUQHUH")
-                }
-            },
+            // events: {
+            //     redraw: function(e) {
+            //         console.log({e,this: this.x}, "HUUHUAHUFHUQHUHFUQHUH")
+            //     }
+            // },
+            height: "240px"
         },
         rangeSelector: {
             selected: 1,
@@ -130,11 +141,21 @@ const Revenue = ({data}) => {
     return (
         <div className={`${styles.container} ${stylesRev.container}`}>
             <div className={styles.titleContainer}>
-                <div className={styles.titleText}>Conversion</div>
-                <button className={styles.titleButton}>&#8230;</button>
+                <div className={styles.titleText}>Revenue</div>
+            </div>
+            <div className={stylesRev.areaContainer}>
+                <Area />
             </div>
             <div>
-                <Area />
+                <div className={stylesRev.text1}>
+                    Total Revenue
+                </div>
+                <div className={stylesRev.text2}>
+                    ${rev.total}
+                </div>
+                <div className={stylesRev.text3}>
+                    &#8593; {rev.changes}%
+                </div>
             </div>
         </div>
     )

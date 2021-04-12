@@ -4,9 +4,12 @@ import Conversion from "./Conversion.js"
 import Users from "./Users.js"
 import Revenue from "./Revenue.js"
 import styles from "./Home.css"
+import Calendar from "./Calendar.js"
+import Orders from "./Orders"
 
 const Home = () => {
   const [ data, setData ] = useState({})
+  const [value, onChange] = useState(new Date());
 
   useEffect(() => {
     fetch('https://ecdba7fe-ec10-4d90-8d0e-80f8364c7624.mock.pstmn.io/takehometest/frontend/web/dashboard')
@@ -14,7 +17,7 @@ const Home = () => {
     .then(data => data.code === 2200 && setData(data.data))
     .catch(err => console.error(err))
   },[])
-  console.log(data, "Huhauauh")
+
   return (
     <Layout>
       <div className={styles.container}>
@@ -22,6 +25,10 @@ const Home = () => {
           <Conversion data={data?.orders} />
           <Users data={data?.user_category} />
           <Revenue data={data?.orders} />
+        </div>
+        <div className={styles.chartSection} style={{marginTop: "24px"}}>
+          <Calendar value={value} onChange={onChange} />
+          <Orders data={data?.orders} value={value} />
         </div>
       </div>
     </Layout>
