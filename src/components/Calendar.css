@@ -30,7 +30,7 @@
     composes: dkS14W600 from "src/styles/typo.css";
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1020px) {
     .container {
         width: auto;
         margin-right: 0;

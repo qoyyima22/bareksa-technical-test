@@ -34,7 +34,7 @@
     background-color: #e8e9e9;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1020px) {
     .container {
         width: auto;
         margin-right: 0;

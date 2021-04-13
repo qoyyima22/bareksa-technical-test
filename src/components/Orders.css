@@ -139,7 +139,7 @@
     composes: whS12W400 from "src/styles/typo.css"
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1020px) {
     .tbody tr {
         height: auto;
     }

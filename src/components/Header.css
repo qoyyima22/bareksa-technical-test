@@ -138,7 +138,7 @@
     font-weight: 400;
     letter-spacing: 0.25px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1020px) {
     .user-card, .search-form {
         display: none;
     }

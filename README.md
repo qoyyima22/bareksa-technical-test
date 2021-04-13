@@ -15,7 +15,7 @@ The code is created with up-to-date **React Hooks Component**. Project directory
 Data was obtained via request-response to specified API. To generate charts and tables, the data was being manipulated to be fit with each charts and tables component. Displayed page was made to be **exactly the same with the UI design** that was provided. Although there are some difference specifically in Area chart and calendar component because of library limitation and time constraint.
 
 ### Page Responsiveness
-The page was developed to be **responsive in all devices** in mind. There are layout adjustment to make it fit with tab and mobile devices. The content which are horizontally aligned in desktop, was made to be vertically aligned below 768px device width (tab and mobile device).
+The page was developed to be **responsive in all devices** in mind. There are layout adjustment to make it fit with tab and mobile devices. The content which are horizontally aligned in desktop, was made to be vertically aligned below 1020px device width (tab and mobile device).
 
 ### Unit test
 This project also developed also with **unit and component testing** environment. The library used for this purpose is Jest and Enzyme. Testing coverage report can be accessed here https://bareksa-technical-test.foreach.id/coverage/lcov-report/index.html.
