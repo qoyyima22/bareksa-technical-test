@@ -36,3 +36,5 @@ To check the page responsiveness, you can change browser size. The project was m
 The project is deployed into https://bareksa-technical-test.foreach.id. **Deployment was made to be automated using github actions and workflows**. The domain was also secured (using https). Also using **Cloudflare as Content Delivery Network (CDN)**.
 
 Kindly check this website for demo: https://bareksa-technical-test.foreach.id
+
+github repository: https://github.com/qoyyima22/bareksa-technical-test
