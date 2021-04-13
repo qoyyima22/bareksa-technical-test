@@ -33,6 +33,9 @@ const Conversion = ({data}) => {
         chart: {
             type: "pie"
         },
+        title: {
+            text: ""
+        },
         tooltip: {
             headerFormat:"",
             pointFormat: '$ {point.y}',

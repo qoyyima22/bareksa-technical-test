@@ -27,7 +27,7 @@ This project also developed also with **unit and component testing** environment
 This project **using React.js** as main library and **Github** as versioning tools.
 
 ### Webpack
-This project also **using webpack**. Webpack configuration for production stage can be found in webpack.prod.js.
+This project also **using webpack, babel, css-loader, file-loader, and css-module**. Webpack configuration for production stage can be found in webpack.prod.js.
 
 ### Responsive Page
 To check the page responsiveness, you can change browser size. The project was made to be **layout-responsive** for all device including tab and mobile.
