@@ -21,6 +21,7 @@
 .table-container {
     height: 388px;
     width: 100%;
+    overflow-x: auto;
 }
 
 .table {
@@ -93,6 +94,7 @@
 
 .tbody tr td {
     padding: 8px 0 8px 12px;
+    width: 100px;
 }
 
 .tbody tr td:first-child {
@@ -135,4 +137,10 @@
     align-items: center;
     justify-content: center;
     composes: whS12W400 from "src/styles/typo.css"
+}
+
+@media (max-width: 768px) {
+    .tbody tr {
+        height: auto;
+    }
 }
