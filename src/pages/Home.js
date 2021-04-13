@@ -1,36 +1,43 @@
 import React, { useEffect, useState } from 'react';
-import Layout from './Layout';
-import Conversion from "./Conversion.js"
-import Users from "./Users.js"
-import Revenue from "./Revenue.js"
+import Layout from '../layout/Layout';
+import Conversion from "../components/Conversion"
+import Users from "../components/Users"
+import Revenue from "../components/Revenue"
+import Calendar from "../components/Calendar"
+import Orders from "../components/Orders"
+import Loading from "../components/Loading"
 import styles from "./Home.css"
-import Calendar from "./Calendar.js"
-import Orders from "./Orders"
 
 const Home = () => {
   const [ data, setData ] = useState({})
+  const [ loading, setLoading ] = useState(true) 
   
   useEffect(() => {
     fetch('https://ecdba7fe-ec10-4d90-8d0e-80f8364c7624.mock.pstmn.io/takehometest/frontend/web/dashboard')
     .then(response => response.json())
     .then(data => data.code === 2200 && setData(data.data))
     .catch(err => console.error(err))
+    .finally(() => setLoading(false))
   },[])
   
   return (
     <Layout>
-      <div className={styles.container}>
-        <div className={styles.chartSection}>
-          <Conversion data={data?.orders} />
-          <Users data={data?.user_category} />
-          <Revenue data={data?.orders} />
-        </div>
-        {
-          data?.orders && (
-            <BottomSection data={data?.orders} />
-          )
-        }
-      </div>
+      {
+        loading ? (<Loading />) : (
+          <div className={styles.container}>
+            <div className={styles.chartSection}>
+              <Conversion data={data?.orders} />
+              <Users data={data?.user_category} />
+              <Revenue data={data?.orders} />
+            </div>
+            {
+              data?.orders && (
+                <BottomSection data={data?.orders} />
+              )
+            }
+          </div>
+        )
+      }
     </Layout>
   );
 };
@@ -69,7 +76,7 @@ const BottomSection = ({data = []}) => {
   },[range])
 
   return (
-        <div className={styles.chartSection} style={{marginTop: "24px"}}>
+        <div className={styles.chartSection} style={{marginTop: "24px", marginBottom: "16px"}}>
           <Calendar min={min} max={max} range={range} setRange={setRange} />
           <Orders data={revData} />
         </div>

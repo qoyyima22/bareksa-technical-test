@@ -8,8 +8,5 @@
 }
 
 .date {
-   font-size: 12px;
-   font-family: Montserrat, sans-serif;
-   font-weight: 600; 
-   color: #333;
+   composes: dkS12W600 from "src/styles/typo.css"
 }

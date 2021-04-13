@@ -1,7 +1,6 @@
 import React from 'react';
-import Header from "./Header"
-import SubHeader from "./SubHeader"
-import styles from './Layout.css';
+import Header from "../components/Header"
+import SubHeader from "../components/SubHeader"
 
 const Layout = ({ children }) => {
   return (

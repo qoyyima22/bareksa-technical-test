@@ -28,6 +28,7 @@ const CalendarCustom = ({range, setRange, min, max}) => {
           showNeighboringMonth={false}
           minDate={new Date(min)}
           maxDate={new Date(max)}
+          tileClassName={({date}) => date.getDay() === 1 ? "monday" : date.getDay() === 0 && "sunday"}
         />
       }
       <div className={styles.btnContainer}>

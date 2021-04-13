@@ -1,0 +1,82 @@
+.dk-s24-w700 {
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.dk-s16-w700 {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    color: #333;
+}
+
+.dk-s14-w600 {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+}
+
+.dk-s12-w600 {
+    font-size: 12px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600; 
+    color: #333;
+}
+
+.lg-s12-w600  {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #9C9C9C;
+}
+
+.lg-s12-w400 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #9c9c9c;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+}
+
+.lg-s14-w400 {
+    color: #9c9c9c;
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+}
+
+.wh-s12-w400 {
+    text-transform: capitalize;
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: #FFFFFF;
+}
+
+.es-s14-w400 {
+    font-family: Encode Sans, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    letter-spacing: 0.25px;
+}
+
+.gr-s12-w500 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #5F9F2F;
+}

@@ -1,7 +1,7 @@
 .container {
     padding: 24px;
-    height: 424px;
-    width: 400px;
+    min-height: 374px;
+    width: 350px;
     background: white;
     border: 1px solid #E5E5E5;
     border-radius: 4px;
@@ -22,15 +22,10 @@
     border: 1px solid #82C341;
 }
 .btn {
-	color: inherit;
 	padding: 0;
 	cursor: pointer;
 	outline: inherit;
     border-radius: 4px;
     padding: 8px 16px;
-    font-family: Montserrat, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    color: #333;
+    composes: dkS14W600 from "src/styles/typo.css";
 }

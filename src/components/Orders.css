@@ -1,9 +1,7 @@
 .container {
     background: #FFFFFF;
-    /* border: 1px solid #E5E5E5; */
-    /* border-radius: 4px; */
     padding: 32px 0 0 0;
-    height: 442px;
+    height: 392px;
     overflow-y: hidden;
     flex: 1;
 }
@@ -17,16 +15,11 @@
 }
 
 .title-text {
-    font-family: Montserrat, sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px;
+    composes: dkS24W700 from "src/styles/typo.css"
 }
 
 .table-container {
     height: 388px;
-    /* overflow-y: scroll; */
     width: 100%;
 }
 
@@ -36,15 +29,12 @@
 }
 
 .thead {
-    font-family: Montserrat, sans-serif;
-    font-style: normal;
-    font-size: 14px;
-    color: #333333;
-    height: 56px;
     display: flex;
+    height: 56px;
     align-items: center;
     box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.25);
     background: #F5F5F5;
+    composes: dkS14W600 from "src/styles/typo.css"
 }
 
 .thead tr {
@@ -84,15 +74,10 @@
 }
 
 .tbody {
-    font-family: Encode Sans, sans-serif;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
-    color: #333333;
-    letter-spacing: 0.25px;
     height: 332px;
     overflow-y: auto;
     display: block;
+    composes: esS14W400 from "src/styles/typo.css"
 }
 
 .tbody tr {
@@ -146,15 +131,8 @@
     border-radius: 4px;
     width: 95.4px;
     height: 24px;
-    text-transform: capitalize;
-    font-family: Montserrat, sans-serif;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* text-align: center; */
-    letter-spacing: 0.4px;
-    color: #FFFFFF;
+    composes: whS12W400 from "src/styles/typo.css"
 }

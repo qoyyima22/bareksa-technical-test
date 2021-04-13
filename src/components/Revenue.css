@@ -13,25 +13,13 @@
 }
 
 .text1 {
-    font-family: Montserrat, sans-serif;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-    color: #9C9C9C;
+    composes: lgS12W600 from "src/styles/typo.css";
 }
 
 .text2 {
-    font-family: Montserrat,sans-serif;
-    font-weight: bold;
-    font-size: 24px;
-    color: #333333;
-    line-height: 132%;
-    margin-bottom: 8px;
+    composes: dkS24W700 from "src/styles/typo.css";
 }
 
 .text3 {
-    font-family: Montserrat, sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    color: #5F9F2F;
+    composes: grS12W500 from "src/styles/typo.css";
 }
