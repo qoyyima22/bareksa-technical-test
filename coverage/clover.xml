@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1618319363947" clover="3.2.0">
+  <project timestamp="1618319363947" name="All files">
+    <metrics statements="122" coveredstatements="87" conditionals="39" coveredconditionals="12" methods="38" coveredmethods="26" elements="199" coveredelements="125" complexity="0" loc="122" ncloc="122" packages="3" files="10" classes="10"/>
+    <package name="components">
+      <metrics statements="85" coveredstatements="67" conditionals="22" coveredconditionals="6" methods="26" coveredmethods="19"/>
+      <file name="Calendar.js" path="/home/qoyyima/Documents/bareksa-technical-test/src/components/Calendar.js">
+        <metrics statements="11" coveredstatements="7" conditionals="8" coveredconditionals="1" methods="6" coveredmethods="2"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="31" count="0" type="cond" truecount="0" falsecount="4"/>
+      </file>
+      <file name="Conversion.js" path="/home/qoyyima/Documents/bareksa-technical-test/src/components/Conversion.js">
+        <metrics statements="15" coveredstatements="14" conditionals="4" coveredconditionals="2" methods="4" coveredmethods="4"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="6" type="stmt"/>
+        <line num="8" count="6" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="29" count="6" type="stmt"/>
+        <line num="68" count="6" type="stmt"/>
+      </file>
+      <file name="Header.js" path="/home/qoyyima/Documents/bareksa-technical-test/src/components/Header.js">
+        <metrics statements="5" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="8" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="11" count="8" type="stmt"/>
+      </file>
+      <file name="Loading.js" path="/home/qoyyima/Documents/bareksa-technical-test/src/components/Loading.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+      </file>
+      <file name="Orders.js" path="/home/qoyyima/Documents/bareksa-technical-test/src/components/Orders.js">
+        <metrics statements="12" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="6" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="70" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="71" count="0" type="stmt"/>
+      </file>
+      <file name="Revenue.js" path="/home/qoyyima/Documents/bareksa-technical-test/src/components/Revenue.js">
+        <metrics statements="25" coveredstatements="24" conditionals="4" coveredconditionals="2" methods="5" coveredmethods="5"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="7" type="stmt"/>
+        <line num="10" count="7" type="stmt"/>
+        <line num="14" count="7" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="46" count="7" type="stmt"/>
+        <line num="53" count="7" type="stmt"/>
+        <line num="99" count="5" type="stmt"/>
+        <line num="125" count="7" type="stmt"/>
+        <line num="126" count="3" type="stmt"/>
+        <line num="135" count="7" type="stmt"/>
+      </file>
+      <file name="SubHeader.js" path="/home/qoyyima/Documents/bareksa-technical-test/src/components/SubHeader.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+      </file>
+      <file name="Users.js" path="/home/qoyyima/Documents/bareksa-technical-test/src/components/Users.js">
+        <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="4"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="12" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="25" count="6" type="stmt"/>
+        <line num="67" count="6" type="stmt"/>
+      </file>
+    </package>
+    <package name="layout">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Layout.js" path="/home/qoyyima/Documents/bareksa-technical-test/src/layout/Layout.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="pages">
+      <metrics statements="35" coveredstatements="18" conditionals="17" coveredconditionals="6" methods="11" coveredmethods="6"/>
+      <file name="Home.js" path="/home/qoyyima/Documents/bareksa-technical-test/src/pages/Home.js">
+        <metrics statements="35" coveredstatements="18" conditionals="17" coveredconditionals="6" methods="11" coveredmethods="6"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="45" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="53" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="67" count="1" type="stmt"/>
+        <line num="68" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="72" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="74" count="0" type="stmt"/>
+        <line num="78" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

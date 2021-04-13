@@ -33,7 +33,6 @@ const Conversion = ({data}) => {
         chart: {
             type: "pie"
         },
-        title: "Tes",
         tooltip: {
             headerFormat:"",
             pointFormat: '$ {point.y}',
@@ -66,7 +65,6 @@ const Conversion = ({data}) => {
             }
         }
     }} />
-
     return (
         <div className={styles.container} style={{flex: 328}}>
             <div className={styles.titleContainer}>

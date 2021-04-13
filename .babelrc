@@ -6,5 +6,21 @@
       "@babel/plugin-syntax-dynamic-import",
       "@babel/plugin-proposal-class-properties",
       "react-hot-loader/babel"
-    ]
+    ],
+    "env": {
+      "test": {
+        "presets": [
+          [
+            "@babel/preset-env",
+            {
+              "modules": "auto"
+            },
+            "jest"
+          ]
+        ],
+        "plugins": [
+          "@babel/plugin-transform-runtime"
+        ]
+      }
+    }
   }
