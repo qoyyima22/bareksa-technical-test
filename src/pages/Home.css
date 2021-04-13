@@ -4,3 +4,15 @@
 .chart-section {
     display: flex;
 }
+.chart-section-bottom {
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+@media (max-width: 768px) {
+    .chart-section {
+        flex-direction: column;
+    }
+    .chart-section-bottom {
+        margin-top: 0;
+    }
+}

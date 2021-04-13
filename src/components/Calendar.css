@@ -29,3 +29,10 @@
     padding: 8px 16px;
     composes: dkS14W600 from "src/styles/typo.css";
 }
+
+@media (max-width: 768px) {
+    .container {
+        width: auto;
+        margin-right: 0;
+    }
+}

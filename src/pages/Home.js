@@ -76,7 +76,7 @@ const BottomSection = ({data = []}) => {
   },[range])
 
   return (
-        <div className={styles.chartSection} style={{marginTop: "24px", marginBottom: "16px"}}>
+        <div className={`${styles.chartSection} ${styles.chartSectionBottom}`} >
           <Calendar min={min} max={max} range={range} setRange={setRange} />
           <Orders data={revData} />
         </div>

@@ -33,3 +33,11 @@
 .title-button:hover {
     background-color: #e8e9e9;
 }
+
+@media (max-width: 768px) {
+    .container {
+        width: auto;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+}
