@@ -5,6 +5,8 @@
     background: #fff;
     padding: 0 0 0 16px;
     justify-content: space-between;
+    top: 0;
+    z-index: 3;
 }
 .subcontainer {
     display: flex;

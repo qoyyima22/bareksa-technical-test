@@ -14,7 +14,7 @@ const Orders = ({data, value}) => {
                 <table className={styles.table}>
                     <thead className={styles.thead}>
                         <tr>
-                            <th>Order Number</th>
+                            <th>Order{'\n'}Number</th>
                             <th>Status</th>
                             <th>Operator</th>
                             <th>Location</th>
@@ -22,15 +22,17 @@ const Orders = ({data, value}) => {
                             <th>Due Date</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody className={styles.tbody}>
                         {
                             data?.map((el,i) => (
-                                <tr>
+                                <tr key={i}>
                                     <td>
                                         #{el.order_id.split("-")[1]}
                                     </td>
                                     <td>
-                                        {el.status}
+                                        <div className={`${styles[el.status]} ${styles.badge}`}>
+                                            {el.status}
+                                        </div>
                                     </td>
                                     <td>
                                         {el.full_name}
@@ -39,18 +41,14 @@ const Orders = ({data, value}) => {
                                         {el.location}
                                     </td>
                                     <td>
-                                        {el.start_date}
+                                        {timeConverter(el.start_date)}
                                     </td>
                                     <td>
-                                        {el.due_date}
+                                        {timeConverter(el.due_date)}
                                     </td>
                                 </tr>
                             ))
                         }
-                        <tr>
-                            <td>January</td>
-                            <td>$100</td>
-                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -59,3 +57,16 @@ const Orders = ({data, value}) => {
 }
 
 export default Orders
+
+
+function timeConverter(UNIX_timestamp){
+    var a = new Date(UNIX_timestamp);
+    var months = ['01','02','03','04','05','06','07','08','09','10','11','12'];
+    var year = a.getFullYear();
+    var month = months[a.getMonth()];
+    var date = a.getDate();
+    var hour = a.getHours();
+    var min = a.getMinutes();
+    var time = date + '/' + month + '/' + year + ' ' + (hour.toString().length === 1 ? `0${hour}` : hour) + ':' + (min.toString().length === 1 ? `0${min}` : min);
+    return time;
+  }

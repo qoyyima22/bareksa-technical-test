@@ -5,13 +5,13 @@ import styles from './Layout.css';
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <>
       <Header />
       <SubHeader />
       <div>
         {children}
       </div>
-    </div>
+    </>
   );
 };
 

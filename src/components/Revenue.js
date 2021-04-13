@@ -12,18 +12,15 @@ const Revenue = ({data}) => {
         changes: 100
     })
     useEffect(() => {
-        const days = ['Mon', "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
         let temp = {}
         if(data?.length) {
             for(let i = 0; i < data.length; i++) {
                 let date = new Date(data[i].start_date)
-                console.log({date})
                 let key = `${date.getUTCDate()}-${date.getUTCMonth()}-${date.getUTCFullYear()}`
                 if(temp[key]) {
                     temp[key].value += Number(data[i].conversion_revenue) 
                 } else {
                     temp[key] = {
-                        day: days[date.getDay()],
                         date,
                         value: Number(data[i].conversion_revenue)
                     }
@@ -37,10 +34,8 @@ const Revenue = ({data}) => {
             res.push([
                 temp[el].date.getTime(),
                 temp[el].value,
-                // x: temp[el].day,
             ])
         })
-        console.log({res,total}, "ini res")
         setAreaData(res)
         setRev({
             ...rev,
@@ -137,7 +132,6 @@ const Revenue = ({data}) => {
         </div>
       );
 
-    console.log(areaData)
     return (
         <div className={`${styles.container} ${stylesRev.container}`}>
             <div className={styles.titleContainer}>

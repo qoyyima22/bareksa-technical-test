@@ -8,13 +8,13 @@ import NoMatch from './NoMatch';
 const App = () => {
   return (
     <Router>
-      <div>
+      <>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/dynamic" component={DynamicPage} />
           <Route component={NoMatch} />
         </Switch>
-      </div>
+      </>
     </Router>
   );
 };

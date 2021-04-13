@@ -111,9 +111,10 @@ html, body {
     padding: 0.75em 0.75em;
     background: none;
   }
-  /* .react-calendar__tile:disabled {
-    background-color: #E0DBEB;
-  } */
+  .react-calendar__tile:disabled {
+    /* background-color: #565656; */
+    color: #bcbcbc;
+  }
   /* .react-calendar__tile:enabled:hover,
   .react-calendar__tile:enabled:focus {
     background-color: #E0DBEB;

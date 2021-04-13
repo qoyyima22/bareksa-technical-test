@@ -25,13 +25,14 @@
 }
 
 .table-container {
-    height: 100%;
-    overflow-y: scroll;
+    height: 388px;
+    /* overflow-y: scroll; */
     width: 100%;
 }
 
 .table {
     width: 100%;
+    border-collapse: collapse;
 }
 
 .thead {
@@ -39,10 +40,16 @@
     font-style: normal;
     font-size: 14px;
     color: #333333;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.25);
     background: #F5F5F5;
 }
+
 .thead tr {
-    background: #F5F5F5;
+    display: flex;
+    width: 100%;
 }
 
 .thead tr th {
@@ -50,5 +57,104 @@
     line-height: 20px;
     padding: 8px 0 8px 12px;
     text-align: left;
-    border: none;
+    white-space: pre-wrap;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.thead tr th:first-child {
+    flex: 121;
+}
+.thead tr th:nth-child(2) {
+    flex: 159;
+}
+.thead tr th:nth-child(3) {
+    flex: 190;
+}
+.thead tr th:nth-child(4) {
+    flex: 196;
+}
+.thead tr th:nth-child(5) {
+    flex: 159;
+}
+.thead tr th:nth-child(6) {
+    flex: 159;
+}
+
+.tbody {
+    font-family: Encode Sans, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    letter-spacing: 0.25px;
+    height: 332px;
+    overflow-y: auto;
+    display: block;
+}
+
+.tbody tr {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0px -1px 0px #E5E5E5;
+}
+
+.tbody tr:hover {
+    background-color: #EFF7FF;
+}
+
+.tbody tr td {
+    padding: 8px 0 8px 12px;
+}
+
+.tbody tr td:first-child {
+    flex: 121;
+    text-transform: uppercase;
+}
+.tbody tr td:nth-child(2) {
+    flex: 159;
+}
+.tbody tr td:nth-child(3) {
+    flex: 190;
+}
+.tbody tr td:nth-child(4) {
+    flex: 196;
+}
+.tbody tr td:nth-child(5) {
+    flex: 159;
+}
+.tbody tr td:nth-child(6) {
+    flex: 159;
+}
+
+.completed {
+    background: #789764;
+}
+
+.pending {
+    background: #E69849;
+}
+
+.canceled {
+    background: #D66D4B;
+}
+
+.badge {
+    border-radius: 4px;
+    width: 95.4px;
+    height: 24px;
+    text-transform: capitalize;
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    letter-spacing: 0.4px;
+    color: #FFFFFF;
 }
